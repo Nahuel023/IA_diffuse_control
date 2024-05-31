@@ -1,0 +1,199 @@
+#centralwidget {
+    background-color: #CECFC9;
+}
+
+QMainWindow {
+	color:#0A3143;
+    background-color: #276E90; /* Define el color de fondo de la ventana principal */
+    border: 2px solid #EFEFEF; /* Define el borde de la ventana principal */
+    border-radius: 10px; /* Redondea los bordes de la ventana principal */
+}
+
+
+QMenuBar {
+	color:#0A3143;
+    background-color: #276E90;
+    border: 1px solid #EFEFEF;
+}
+
+QMenu
+{
+background-color: #276E90;
+color:#EFEFEF;
+font-style:bold;
+}
+
+QGroupBox{
+	color:#0A3143;
+ 	border: 2px solid #276E90; /* Define el borde de la ventana principal */
+	border-radius: 10px; /* Redondea los bordes de la ventana principal */
+	margin-top: 5ex; /* leave space at the top for the title */
+}
+
+QGroupBox::title {
+ 	border: 3px solid #CECFC9; /* Define el borde de la ventana principal */
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+}
+
+QPushButton
+{
+color:#0A3143;
+background-color: #276E90;
+border: 1px solid #EFEFEF;
+border-width: 2px;
+border-radius: 10px;
+height:25px;
+}
+
+QPushButton:hover { background-color: #EFEFEF; }
+
+QLCDNumber{
+	color:#0A3143;
+	background-color: #CECFC9;
+	border: 2px solid #EFEFEF;
+	border-radius: 10px; /* Redondea los bordes de la ventana principal */
+}
+
+QLabel
+{
+color:#0A3143;
+background-color: #EFEFEF;
+border-radius: 10px;
+padding: 2px;
+}
+
+QTextEdit {
+ border: 2px solid #EFEFEF;
+ border-radius: 10px;
+ background-color: rgba(0,0,0,0);
+ }
+
+QLineEdit{
+	color:#0A3143;
+	background-color: #EFEFEF;
+	border: 1px solid #EFEFEF;
+	border-width: 2px;
+	border-radius: 8px;
+}
+
+QPlainTextEdit{
+	color:#0A3143;
+	background-color: #EFEFEF;
+	border: 1px solid #EFEFEF;
+	border-width: 2px;
+	border-radius: 8px;
+}
+
+QTextEdit#textEdit_RAW{
+	font-family: "Verdana";
+	font-size: 12px ;
+	font-style: bold;
+	padding:5px;
+   color:#0A3143;
+}
+
+QTextEdit#textEdit_PROCCES{
+    font-family: "Verdana";
+	font-size: 12px ;
+	font-style: bold;
+	padding:5px;
+   color:#0A3143;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid #EFEFEF; /* Define el borde superior del marco del widget */
+    position: absolute; /* Posiciona el marco de manera absoluta en su contenedor */
+    top: -0.5em; /* Desplaza el marco hacia arriba en medio de una unidad em */
+}
+
+QTabWidget::tab-bar {
+    alignment: center; /* Centra las pestañas en la barra de pestañas */
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background-color: #276E90; /* Define un gradiente lineal para el fondo de la pestaña */
+    border: 1px solid #EFEFEF; /* Define el borde de la pestaña */
+    border-bottom-color: #EFEFEF; /* Define el color del borde inferior de la pestaña */
+    border-top-left-radius: 3px; /* Redondea el borde superior izquierdo de la pestaña */
+    border-top-right-radius: 3px; /* Redondea el borde superior derecho de la pestaña */
+	border-bottom-left-radius: 3px; /* Redondea el borde superior izquierdo de la pestaña */
+    border-bottom-right-radius: 3px; /* Redondea el borde superior derecho de la pestaña */
+    min-width: 8ex; /* Define el ancho mínimo de la pestaña */
+    padding: 2px; /* Define el relleno dentro de la pestaña */
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #EFEFEF; /* Define un gradiente lineal para el fondo de la pestaña */ /* Define un gradiente lineal para el fondo de la pestaña cuando está seleccionada o se pasa el cursor sobre ella */
+}
+
+QTabBar::tab:selected {
+    border-color: #EFEFEF; /* Define el color del borde de la pestaña cuando está seleccionada */
+    border-bottom-color: #276E90; /* Define el color del borde inferior de la pestaña cuando está seleccionada */
+}
+
+QComboBox {
+	color:#0A3143;
+	background-color: #276E90;
+    border: 1px solid #EFEFEF;
+	border-width: 2px;
+	border-radius: 10px;
+	height:25px;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     border-color: #EFEFEF; 
+}
+
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1); /* Define un gradiente lineal para el fondo del QComboBox cuando el menú desplegable está abierto */
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px; /* Aumenta el relleno superior cuando el menú desplegable está abierto */
+    padding-left: 4px; /* Aumenta el relleno izquierdo cuando el menú desplegable está abierto */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding; /* Define el origen del subcontrol en el relleno */
+    subcontrol-position: top right; /* Posiciona el subcontrol en la parte superior derecha */
+    width: 15px; /* Define el ancho del subcontrol */
+
+    border-left-width: 1px; /* Define el ancho del borde izquierdo del subcontrol */
+    border-left-color: #276E90; /* Define el color del borde izquierdo del subcontrol */
+    border-left-style: solid; /* Define el estilo del borde izquierdo del subcontrol */
+    border-top-right-radius: 3px; /* Redondea el borde superior derecho del subcontrol */
+    border-bottom-right-radius: 3px; /* Redondea el borde inferior derecho del subcontrol */
+}
+
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px; /* Desplaza la flecha hacia abajo hacia abajo cuando el menú desplegable está abierto */
+    left: 1px; /* Desplaza la flecha hacia abajo hacia la izquierda cuando el menú desplegable está abierto */
+}
+
+QComboBox::down-arrow {
+   image: url(:/arrowdown.png);
+}
+
+
+QComboBox QAbstractItemView {
+    border: 2px solid #276E90;
+    selection-background-color: lightgray;
+	border-radius: 5px;
+}
+
+QDoubleSpinBox {
+    color:#0A3143;
+	background-color: #EFEFEF;
+}
+
+QSpinBox {
+    color:#0A3143;
+	background-color: #EFEFEF;
+}
